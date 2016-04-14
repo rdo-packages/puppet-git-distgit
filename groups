@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-27eb13178453737dbe6448dbd48eb29290885138       	puppet-git-distgit-core
-3afcabd57d5003f6deefd407cd395e253d177c71        	puppet-git-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+27eb13178453737dbe6448dbd48eb29290885138	puppet-git-distgit-core
+3afcabd57d5003f6deefd407cd395e253d177c71	puppet/puppet-git-distgit-ptl
+global:Registered-Users                 	Registered Users
