@@ -7,8 +7,8 @@
 
 
 Name:           puppet-git
-Version:        XXX
-Release:        XXX
+Version:        0.4.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Module for installing Git or Gitosis.
 License:        Apache-2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/git/
 
 
 %changelog
+* Tue Sep 20 2016 Haikel Guemar <hguemar@fedoraproject.org> - 0.4.0-1.5e86224.git
+- Newton update 0.4.0 (5e862242466de4ae654a5de5ef4c1bc4e4b9f92e)
+
 
