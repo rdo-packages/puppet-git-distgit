@@ -1,4 +1,17 @@
+%{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-git
+%global commit 5e862242466de4ae654a5de5ef4c1bc4e4b9f92e
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
+
+%define upstream_name puppet-git
+%global commit 5e862242466de4ae654a5de5ef4c1bc4e4b9f92e
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-git
 Version:        XXX
@@ -8,7 +21,7 @@ License:        Apache-2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-git
 
-Source0:        https://github.com/puppetlabs/puppetlabs-git/archive/%{version}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
