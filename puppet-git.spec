@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-git
-%global commit 5e862242466de4ae654a5de5ef4c1bc4e4b9f92e
+%global commit 7e9b9de109730e233811817cefe110cefe6484a6
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -8,7 +8,7 @@
 
 Name:           puppet-git
 Version:        0.4.0
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        Module for installing Git or Gitosis.
 License:        Apache-2.0
 
@@ -49,6 +49,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/git/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 0.4.0-2.7e9b9de.git
+- Newton update 0.4.0 (7e9b9de109730e233811817cefe110cefe6484a6)
+
 * Tue Sep 20 2016 Haikel Guemar <hguemar@fedoraproject.org> - 0.4.0-1.5e86224.git
 - Newton update 0.4.0 (5e862242466de4ae654a5de5ef4c1bc4e4b9f92e)
 
