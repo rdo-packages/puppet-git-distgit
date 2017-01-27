@@ -10,7 +10,7 @@ Name:           puppet-git
 Version:        XXX
 Release:        XXX
 Summary:        Module for installing Git or Gitosis.
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-git
 
