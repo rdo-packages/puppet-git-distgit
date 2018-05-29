@@ -5,6 +5,7 @@
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
+%global __brp_mangle_shebangs_exclude_from  /usr/share/openstack-puppet/modules/git/files/subtree/bash_completion.sh
 
 Name:           puppet-git
 Version:        XXX
