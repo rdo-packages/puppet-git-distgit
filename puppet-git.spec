@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-git
-%global commit 5e862242466de4ae654a5de5ef4c1bc4e4b9f92e
+%global commit 4e4498e3db218cefc27e40b7eb4e442177ccab28
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -8,8 +8,8 @@
 %global __brp_mangle_shebangs_exclude_from  /usr/share/openstack-puppet/modules/git/files/subtree/bash_completion.sh
 
 Name:           puppet-git
-Version:        XXX
-Release:        XXX
+Version:        0.5.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Module for installing Git or Gitosis.
 License:        ASL 2.0
 
@@ -50,5 +50,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/git/
 
 
 %changelog
+* Tue Sep 28 2021 RDO <dev@lists.rdoproject.org> 0.5.0-1.4e4498egit
+- Update to post 0.5.0 (4e4498e3db218cefc27e40b7eb4e442177ccab28)
+
 
 
